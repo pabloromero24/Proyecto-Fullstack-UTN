@@ -13,7 +13,7 @@ const HomePage = () => {
                 <div className="video-container">
                 <div className="ratio ratio-16x9 mx-auto my-auto">
                     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"
-                    src="./recursos/videos/138887 (720p) .mp4" title="" allowfullscreen></video>
+                    src="./recursos/videos/skate(720p).mp4" title="" allowfullscreen></video>
                     
                 </div>
                 </div>
