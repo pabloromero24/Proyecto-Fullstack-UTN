@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 26-11-2023 a las 22:40:19
+-- Tiempo de generación: 29-11-2023 a las 18:28:03
 -- Versión del servidor: 8.0.31
 -- Versión de PHP: 8.0.26
 
@@ -35,14 +35,14 @@ CREATE TABLE IF NOT EXISTS `productos` (
   `img_id` varchar(250) DEFAULT NULL,
   `Precio` text CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=43 DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM AUTO_INCREMENT=44 DEFAULT CHARSET=utf8mb3;
 
 --
 -- Volcado de datos para la tabla `productos`
 --
 
 INSERT INTO `productos` (`id`, `Nombre`, `Descripcion`, `img_id`, `Precio`) VALUES
-(1, 'skate', 'Skate completo Pro Hard Maple', 'nkfwncggdel1ljduphas', '27.587'),
+(1, 'skate', 'Skate completo Pro Hard Maple', 'nkfwncggdel1ljduphas', '27.588'),
 (2, 'longboard', 'Longboard Genesis Hard Maple', 'ljx0jwa2lrbo5hfw4y4g', '32.000'),
 (3, 'remera', 'Remera R3105', 'ocju67vzixbr6ldlmgqw', '8.999'),
 (4, 'skate', 'Skate completo Pro Hard Maple', 'bitlrrm8tx1vzlxs95o6', '27.587'),
