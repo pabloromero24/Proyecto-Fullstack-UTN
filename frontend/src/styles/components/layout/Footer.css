@@ -1,0 +1,137 @@
+:root{
+    --fondo: #222222;
+    --texto: #547B8C;
+    --Primario:#FBFFDC;
+    --Secundario:#FFAC4F;
+
+    --fuentePrincipal:'Roboto Slab', sans-serif;
+    --fuenteSecundaria: 'Barriecito', cursive;   
+    }
+html {
+     box-sizing: border-box;
+     font-size: 62.5%;      
+ }    
+ *, *:before, *:after {
+    box-sizing: inherit;
+}
+body {    
+    background-color: var(--fondo);    
+    font-size: 2rem;
+    line-height: 1.5;
+    font-family: var(--fuentePrincipal);
+}
+a {
+    text-decoration: none;    
+}
+
+footer{
+    width: 100%;       
+    background-image: url(../../../../public/recursos/imagenes/fondo.jpg);    
+    background-attachment: fixed;
+    clear: both; 
+    font-family: var(--fuentePrincipal);
+    font-size: large;        
+    color: #fff;  
+    text-align: center;
+    padding: 5px 0;  
+}
+.nosotros,
+.product,
+.social {
+  list-style: none;  
+  padding: 0;
+  margin: 0;  
+}
+footer a{
+    color: var(--Secundario);
+}
+.social svg{
+    margin: 10px; 
+    transition: 0.4s;         
+}
+footer a:hover{
+    color: var(--texto);
+}
+.social svg:hover{
+    transform: scale(1.2);
+    color: var(--texto);
+}
+footer li{    
+    margin-bottom: 30px;
+    font-size: large;
+    text-align: center;
+}
+footer p{
+    font-size: x-large;
+    text-align: center;
+    margin-top: 2vh;
+    border-bottom: 1px solid gray;
+}
+.p-footer{    
+    text-align: center; 
+    font-size: large;  
+}
+
+/** Media Querys **/
+
+@media (max-width: 1150px) { 
+    
+    footer p{
+        font-size: larger;
+        margin-top: 1vh;
+    } 
+    .social svg{
+        width: 10%;         
+        height: 10%;
+     }    
+}
+@media (max-width: 768px) {    
+     
+    .social svg{
+        width: 12%;         
+        height: 12%;
+     }
+     footer p{
+        font-size: large;
+        margin-top: 1vh;
+    }  
+    .nosotros a,
+    .product a{
+        font-size: medium;
+    }     
+}
+
+@media (max-width: 480px) {
+     
+    .social svg{      
+       width: 20%;         
+       height: 20%;
+    }        
+     .p-footer{
+        font-size: medium;
+     }
+}
+
+@media (max-width: 400px) {
+        
+    .social svg{
+        margin: 7px;
+        width: 22%;         
+        height: 22%;
+     }  
+     .p-footer{
+        font-size: small;
+     }
+   
+}
+@media (max-width: 320px) {
+   
+    .social svg{
+        width: 20%;
+        height: 20%;
+        margin-bottom: 20px;        
+    }  
+     .p-footer{
+        font-size: medium;
+    }   
+}

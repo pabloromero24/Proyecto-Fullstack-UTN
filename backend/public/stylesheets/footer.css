@@ -1,0 +1,24 @@
+html {
+     box-sizing: border-box;
+     font-size: 62.5%;      
+ }    
+ *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+footer{       
+    width: 100%;       
+    clear: both; 
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: large;        
+    color: #fff;  
+    text-align: center;
+    padding: 5px 0;  
+}
+.p-footer{
+    font-size: x-large;
+    text-align: center;
+    margin-top: 2vh;
+    border-bottom: 1px solid gray;
+}
+

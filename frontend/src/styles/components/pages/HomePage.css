@@ -1,0 +1,301 @@
+:root{
+    --fondo: #222222;
+    --texto: #547B8C;
+    --Primario:#FBFFDC;
+    --Secundario:#FFAC4F;
+
+    --fuentePrincipal:'Roboto Slab', sans-serif;
+    --fuenteSecundaria: 'Barriecito', cursive;   
+    }
+html {
+     box-sizing: border-box;
+     font-size: 62.5%;      
+ }    
+ *, *:before, *:after {
+    box-sizing: inherit;
+}
+body {    
+    background-color: var(--fondo);    
+    font-size: 2rem;
+    line-height: 1.5;
+    font-family: var(--fuentePrincipal);
+}
+a {
+    text-decoration: none;    
+}
+
+.ratio video{        
+    position: absolute;    
+    z-index: -1; 
+    padding: 0 5% 0 5%;               
+}
+  .video-container h1{
+    padding-top: 25% !important;    
+}  
+  .video-container h1, p{    
+    font-size: 7vh;
+} 
+
+/** Main Section Carousel **/
+
+.carousel-inner img{
+    width: 75%;    
+}
+.carousel-caption h5 {    
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 25px;
+    text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);    
+}
+.carousel-caption p {        
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: 2px;
+    text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);    
+}
+.carousel-caption a {    
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--texto);
+    padding: 5px 20px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);  
+    transition: 0.6s;     
+}
+.carousel-caption a:hover{
+    color: #222222;   
+    background: var(--Primario);
+    box-shadow: 1px 2px rgba(245, 242, 242, 0.5);
+}
+.carousel-caption{
+    margin-bottom: 15%;
+}
+
+/** Main Section Imagenes **/
+
+.img-container {   
+    margin: 0 auto !important;
+    position: relative; 
+}  
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 1;
+    width: 99.5%;
+    height: 100%;
+    background: linear-gradient(270deg,#222222 15%, rgba(255, 255, 255, 0.2) 80%); 
+    /* border-radius: 5px; */
+    z-index: 2; 
+}
+.image-overlay-2 {
+    position: absolute;
+    top: 0;
+    left: 1;    
+    width: 98.5%;
+    height: 100%;
+    background: linear-gradient(90deg,#222222 10%, rgba(255, 255, 255, 0.2) 80%);
+    /* border-radius: 5px;  */
+    z-index: 2; 
+}    
+  .img-container img {       
+    position: relative; 
+    z-index: 1; 
+}
+.image-cont p{
+    font-family: var(--fuenteSecundaria);
+    font-size: 40px;
+    color: #fff; 
+    margin-top: 65%;   
+}
+.image-cont .btn{
+    width: 30%;
+    height: 8%;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--texto);
+    padding: 5px 20px;
+    color: #fff;
+    margin-top: 15px;
+    border-radius: 5px; 
+    transition: 0.3s;  
+}
+.image-cont .btn:hover{ 
+    color: #222222;   
+    background: var(--Secundario);
+    box-shadow: 1px 2px rgba(245, 242, 242, 0.5);
+}
+
+
+/** Media Querys **/
+
+@media (max-width: 1150px) { 
+    .ratio{
+        margin-top: 6% !important;
+    }     
+    .img-central{
+        width: 85% !important;
+    }    
+    .carousel-caption{
+        margin-bottom: 10%;
+    }
+    .carousel-caption h5 {    
+        font-size: 30px;            
+    }
+    .carousel-caption p {        
+        width: 55%;        
+        font-size: 15px;            
+    }
+    .carousel-caption a {         
+        padding: 4px 15px;        
+        margin-top: 15px;              
+    } 
+    .image-overlay-2{
+        width: 97.5%;
+    }   
+    .image-cont .btn{
+        width: 50%;
+        height: 9%;
+        font-size: 13px;
+    }  
+    .section-principal{
+        display: block !important;
+     }         
+}
+@media (max-width: 768px) {       
+     
+    .carousel-caption{
+        margin-bottom: 10%;
+    }
+    .carousel-caption h5 {    
+        font-size: 25px;
+            
+    }
+    .carousel-caption p {        
+        width: 45%;        
+        font-size: 11px;           
+    }
+    .carousel-caption a {       
+        padding: 3px 13px;               
+    }     
+    .image-cont p{        
+        font-size: 30px;            
+    } 
+    .image-cont .btn{
+        width: 60%;
+        height: 15%;
+        font-size: 12px;
+    }      
+     .section-principal{
+        display: block !important;
+     }     
+}
+
+@media (max-width: 650px) {
+   
+    .ratio{
+        margin-top: 6% !important;
+    }
+    .carousel-caption{        
+        margin-bottom: 10%;
+    }
+    .carousel-caption h5 {    
+        font-size: 17px;            
+    }  
+    .carousel-caption p:nth-child(2){
+        display: none;
+    }      
+    .carousel-caption a {    
+        margin-top: 15px;               
+    }
+    .image-cont p{               
+        font-size: 22px;            
+    } 
+    .image-cont .btn{        
+        width: 60%;
+        height: 13%;
+        font-size: 8px;
+    }
+    .image-overlay-2 {
+        width: 96.5%;
+    }     
+    .section-secundaria{
+        display: block !important;
+    }           
+}
+
+@media (max-width: 480px) {
+      
+    .ratio{
+        margin-top: 5% !important;
+    }    
+    .carousel-caption{        
+        margin-bottom: 6%;
+    }
+    .carousel-caption h5 {    
+        font-size: 14px;            
+    } 
+    .carousel-caption p:nth-child(2){
+        display: none;
+    }     
+    .carousel-caption a {    
+        padding: 5px 20px;               
+    }
+    .image-overlay-2{
+        width: 93%;
+    } 
+    .image-cont p{        
+        font-size: 21px;                  
+    }
+    .image-cont .btn{
+        width: 70%;
+        height: 15%;
+        font-size: 8px;        
+    }      
+    .section-principal{
+        display: none !important;
+     }     
+}
+
+@media (max-width: 400px) {
+    
+    .ratio{
+        margin-top: 5% !important;
+    }         
+    .carousel-caption h5 {    
+        font-size: 10px;            
+    } 
+    .carousel-caption a {         
+        padding: 1px 6px;                     
+    }      
+    .image-cont .btn{
+        width: 80%;
+        height: 15%;
+        font-size: 6px;        
+    }
+    .image-cont p{       
+        font-size: 15px;                        
+    } 
+    .section-principal{
+        display: none !important;
+     }     
+}
+@media (max-width: 320px) {
+    .ratio{
+        margin-top: 4% !important;
+    }        
+    .carousel-caption h5 {    
+        font-size: 8px;            
+    } 
+    .image-cont .btn{
+        width: 90%;
+        height: 15%;
+        font-size: 6px;        
+    }     
+}

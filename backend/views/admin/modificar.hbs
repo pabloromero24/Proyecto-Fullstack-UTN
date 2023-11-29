@@ -1,0 +1,40 @@
+<div class="formulario">
+    <h2 class="mb-5 titulo-agregar">Modificar un producto</h2>
+    <form action="/admin/novedades/modificar" method="post" enctype="multipart/form-data">
+    <input type="hidden" value="{{novedad.id}}" name="id">
+      <div class="mb-3">
+        <label for="Nombre">Nombre del Producto</label>
+        <input type="text" value="{{novedad.Nombre}}" class="form-control" name="Nombre">
+      </div>
+      <div class="mb-3">
+        <label for="Descripcion">Descripción</label>
+        <textarea name="Descripcion" class="form-control" rows="4" cols="50">{{novedad.Descripcion}}</textarea>
+      </div>
+      <div class="mb-3">
+        <p>
+          <label>Imagen <input class="form-control-image rounded-1" 
+          type="file" name="imagen" id="imagen"></label>          
+        </p>
+        <p>
+          <label><input style="all: initial; appearance: checkbox; -webkit-appearance: checkbox; -moz-appearance: checkbox;"
+           type="checkbox" name="img_delete" id="img_delete" value="1">
+          Eliminar la imagen actual?</label>
+          <input type="hidden" name="img_original" value="{{novedad.img_id}}">
+        </p>
+      </div>
+      <label for="Precio">Precio</label>
+        <input class="form-control" type="text" name="Precio" value="{{novedad.Precio}}">
+      <button type="submit" class="btn btn-primary">Guardar</button>
+      <button type="button" class="btn btn-primary" onclick="cancelar()">Cancelar</button>
+    </form>  
+    {{#if error}} 
+        <p class="p-error">{{message}}</p>
+    {{/if}}  
+
+    <script>
+      function cancelar(){
+        window.location.href="/admin/novedades";}
+    </script>  
+
+</div>
+

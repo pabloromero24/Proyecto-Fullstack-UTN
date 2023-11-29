@@ -1,0 +1,73 @@
+/** Globales **/
+
+:root{
+  --fondo: #222222;
+  --texto: #547B8C;
+  --Primario:#FBFFDC;
+  --Secundario:#FFAC4F;
+
+  --fuentePrincipal:'Roboto Slab', sans-serif;    
+  }
+html {
+   box-sizing: border-box;
+   font-size: 62.5%;      
+}    
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {  
+  overflow-x: hidden;    
+  background-color: var(--fondo);    
+  font-size: 2rem;
+  line-height: 1.5;
+  font-family: var(--fuentePrincipal);
+}
+h1,h2{
+  text-align: center;
+  color: white;
+}
+
+.marca-central{ 
+  font-size: 3rem;       
+  color: var(--Secundario); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);             
+}
+.marca-central:hover{
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.navbar {
+  background-color: var(--texto);
+}
+.logo{
+  width: 10%; 
+  height: 10%; 
+  border: 2px solid #98EECC;
+  border-radius: 50%; 
+  overflow: hidden; 
+  display: inline-block;
+  margin-left: 6%;
+  box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.5);         
+}
+.logo:hover{
+  box-shadow: 6px 2px 6px rgba(0, 0, 0, 0.5);
+}
+.skate-box{
+  width: 100%; 
+  overflow: visible; 
+  position: relative;
+}
+.logo-skate{
+  width: 15%; 
+  height: auto;
+  position: absolute;
+  top: 100%; 
+  transform: translateY(-50%) translateX(-100%);     
+  margin-top: 3%;    
+  animation:slide-right 0.9s linear both             
+}
+@keyframes 
+slide-right{
+  0% { transform: translateY(-35%) translateX(-100%);}
+  50%{transform: translateY(-65%) translateX(-50%);}
+  100% { transform: translateY(-50%); } 
+}

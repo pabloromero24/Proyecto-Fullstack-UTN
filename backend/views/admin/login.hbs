@@ -1,0 +1,19 @@
+<div class="formulario">
+    <form action="/admin/login" method="post">
+      <div class="mb-3">
+        <label class="form-label" for="user">Usuario</label>
+        <input type="text" class="form-control"
+         id="inputUser" name="usuario">
+      </div>
+      <div class="mb-3">
+        <label for="inputPassword" class="form-label">Password</label>
+        <input type="password" class="form-control"
+         id="inputPassword" name="password">
+      </div>
+      <button type="submit" class="btn btn-primary">Ingresar</button>
+    </form>   
+      {{#if error}}
+      <p class="p-error">Usuario y/o contraseña incorrectos</p>
+      {{/if}}   
+</div>
+    

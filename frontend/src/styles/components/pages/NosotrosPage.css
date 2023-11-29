@@ -1,0 +1,152 @@
+/** Globales **/
+
+:root{
+    --fondo: #222222;
+    --texto: #547B8C;
+    --Primario:#FBFFDC;
+    --Secundario:#FFAC4F;
+
+    --fuentePrincipal:'Roboto Slab', sans-serif;
+    --fuenteSecundaria: 'Barriecito', cursive;   
+    }
+html {
+     box-sizing: border-box;
+     font-size: 62.5%;      
+ }    
+ *, *:before, *:after {
+    box-sizing: inherit;
+}
+.body-nosotros {    
+    background-color: var(--Primario);     
+    line-height: 1.5;
+    font-family: var(--fuentePrincipal);
+}
+a {
+    text-decoration: none;    
+}
+/** Section Imagen Central**/
+
+.img-central{
+    margin-top: 8%;
+}
+
+/** Section cards y texto **/
+
+.nosotros-text{  
+    margin-top: 4%;  
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    color: var(--texto);
+}
+.nosotros-text h1{
+    font-size: 4rem;
+    
+}
+.nosotros-text h2{
+    font-size: 2.5rem;
+    border-bottom: 1px solid gray;
+}
+.nosotros-text p{
+    font-size: large;
+    margin: 0 10%;
+}
+.img-nosotros-text{
+    width: 80%;    
+    border-radius: 30px;
+    box-shadow:  6px 2px 6px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+}
+.img-nosotros-text:hover{
+    box-shadow:  10px 6px 10px rgba(0, 0, 0, 0.5);
+}
+.nosotros-card .card{
+    background-color: var(--Primario);
+    box-shadow:  4px 1px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+    margin-bottom: 20px !important;
+}
+.nosotros-card .card:hover{
+    transform: scale(1.1);
+    box-shadow:  6px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.nosotros-card .card h2{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--texto);
+}
+.nosotros-card .card-body{
+    background-color:#d8f1e7;
+}
+.nosotros-card .card-body p{
+    font-size: large;
+    padding: 8px;
+}
+
+/** Media Querys **/
+
+@media (max-width: 1150px) {  
+    
+    .img-central{
+        width: 85% !important;
+    }     
+    .nosotros-card .card{
+        width: 80% !important;
+    }     
+    .nosotros-card .card h2{
+        font-size: 2.5rem;
+    }
+    .nosotros-card .card p{
+        font-size: medium;
+    }
+    .nosotros-text h1{
+        font-size: 3.5rem;        
+    }
+    .nosotros-text h2{
+        font-size: 2rem;        
+    }
+    .nosotros-text p{
+        font-size: large;
+    }        
+}  
+
+@media (max-width: 768px) {
+    .marca-responsive{        
+        font-size:larger;
+    }    
+    .img-central{
+        width: 95% !important;
+    }      
+}
+
+@media (max-width: 650px) {    
+    .marca-central{
+        display: none;
+    }
+    .marca-central{
+        display: none;
+    }         
+}
+
+@media (max-width: 480px) {
+    .marca-responsive{        
+        font-size:medium;
+    }       
+}
+
+@media (max-width: 400px) {   
+    
+    .marca-responsive{
+        font-size: 75%;
+    }    
+    .nosotros-card .card-s h2{
+        font-size: 2rem;
+    }
+    .nosotros-card .card-s p{
+        font-size: small;
+    }       
+}
+@media (max-width: 320px) {
+    .marca-responsive{
+        font-size: 16px;
+    }       
+}

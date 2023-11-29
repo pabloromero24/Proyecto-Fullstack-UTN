@@ -1,0 +1,5 @@
+JAWSDB_URL:     mysql://d0x5qsjuhqxpxxiv:sri2qwtsvfch1gfq@x71wqc4m22j8e3ql.cbetxkdyhwsb.us-east-1.rds.amazonaws.com/orp7mdy0t3ucsle5
+DB name: orp7mdy0t3ucsle5  
+Host: x71wqc4m22j8e3ql.cbetxkdyhwsb.us-east-1.rds.amazonaws.com  
+Password: sri2qwtsvfch1gfq  
+User: d0x5qsjuhqxpxxiv 

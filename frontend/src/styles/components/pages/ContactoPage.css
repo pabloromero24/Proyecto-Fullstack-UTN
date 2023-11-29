@@ -1,0 +1,238 @@
+/** Globales **/
+
+:root{
+    --fondo: #222222;
+    --texto: #547B8C;
+    --Primario:#FBFFDC;
+    --Secundario:#FFAC4F;
+
+    --fuentePrincipal:'Roboto Slab', sans-serif;
+    --fuenteSecundaria: 'Barriecito', cursive;   
+    }
+html {
+     box-sizing: border-box;
+     font-size: 62.5%;      
+ }    
+ *, *:before, *:after {
+    box-sizing: inherit;
+}
+.body-contacto{    
+    background-color: var(--Primario);    
+    font-size: 2rem;
+    line-height: 1.5;
+    font-family: var(--fuentePrincipal);
+}
+a {
+    text-decoration: none;    
+}
+/** Main Section-imagenes **/
+
+.img-container {
+    position: relative;
+    margin-top: 8% !important;        
+} 
+.card-img-overlay{
+    position: absolute;   
+    border-radius: 0px !important; 
+    width: 100%;
+    height: 100%;           
+    text-align: center;
+    z-index: 2; 
+    opacity: 0;
+    transition: all .2s ease-out;
+}
+.card-img-overlay h1{
+    font-size: 4rem;
+    margin-top: 25%;
+}
+.card-img-overlay a{
+    color:var(--Secundario);    
+}
+.card-img-overlay a:hover{
+    color: var(--texto);    
+}
+.card-img-overlay svg{
+    transition: 0.4s;
+}
+.card-img-overlay svg:hover{
+    transform: scale(1.2);
+}
+.card-img-overlay:hover{
+    opacity: 1;
+    background: rgba(1, 1, 1, 0.6);
+}    
+.img-container img { 
+    border-radius: 0px !important;       
+    position: relative; 
+    z-index: 1; 
+}
+
+/** Section Formulario **/
+
+.form-cont{
+    margin-top: 10%; 
+    text-align: center;   
+}
+.form-cont h1{
+    margin-bottom: 7%;
+    font-size: 3.5rem;
+    color: black;   
+}
+.form-cont h2{
+    font-size: 2.5rem;
+    color: rgb(104, 103, 103);   
+    padding-bottom: 5%;        
+}
+.form-cont input{ 
+    font-size: medium;   
+    width: 50%;
+    height: 40px;
+    border: 1px solid rgb(13, 13, 13);
+    box-shadow: 5px 5px 5px rgba(26, 25, 25, 0.5);
+}
+.form-cont input:hover{
+    border: 2px solid rgb(13, 13, 13);
+}
+.form-cont textarea{
+    font-size: medium;
+    border: 1px solid rgb(13, 13, 13);    
+    width: 50%;
+    height: 80px;
+    box-shadow: 5px 5px 5px rgba(26, 25, 25, 0.5);
+}
+.form-cont textarea:hover{
+    border: 2px solid rgb(13, 13, 13);
+}
+.form-input{
+    margin-bottom: 8%;
+}
+.form-cont .btn{
+    border: 1px solid gray;
+    font-size: medium;
+    width: 15%;
+    height: 40px;
+    margin-bottom: 5%;
+    background-color: var(--texto);
+    box-shadow: 5px 5px 5px rgba(26, 25, 25, 0.5);
+    transition: 0.3s;
+}
+.form-cont .btn:hover{
+    background-color: var(--Secundario);
+    color: black;
+    box-shadow: 6px 6px 10px rgba(26, 25, 25, 0.5);
+}
+
+/** Media Querys **/
+
+@media (max-width: 1150px) { 
+       
+    .img-container{
+        margin-top: 9%;
+    } 
+    .form-cont{
+        margin-top: 1px;    
+    }
+    .form-cont h1{
+        margin-top: 8%;
+        font-size: 2rem;
+    }
+    .form-cont h2{
+        font-size: large;
+    }
+    .form-cont label{
+        font-size: medium;
+    }
+    .form-cont input{
+        width: 60%;
+        height: 28px;
+    }
+    .form-cont textarea{
+        width: 60%;
+        height: 55px;
+    }
+    .form-cont .btn{
+        width: 25%;
+        height: 38px;
+    }     
+}
+
+@media (max-width: 768px) {       
+    
+    .form-cont label{
+        font-size: medium;
+    }
+    .form-cont input{
+        width: 75%;
+        height: 25px;
+        margin-top: 1px !important;
+    } 
+    .form-cont textarea{
+        width: 75%;
+        height: 50px;
+    }  
+    .form-cont .btn{
+        width: 30% !important;
+        height: 33px;
+    }       
+}
+
+@media (max-width: 650px) {    
+   
+    .img-container{
+        margin-top: 10%;    
+    }
+    .card-img-overlay h1{        
+        margin-top: 15%;
+    }             
+}
+
+@media (max-width: 480px) {
+   
+    .img-container{
+        margin-top: 16%;    
+    }     
+    .card-img-overlay h1{
+        font-size: larger;    
+    } 
+    .card-img-overlay svg{
+        width: 20%;  
+        height: 20%;         
+    }
+    .card-img-overlay p{
+        font-size: medium;    
+    }
+    .form-cont .btn{
+        width: 30% !important;
+        height: 40px;
+    }        
+}
+
+@media (max-width: 400px) {
+    
+    .img-container{
+        margin-top: 15%;    
+    }  
+    .card-img-overlay h1{        
+        margin-top: 8%;
+    }       
+}
+
+@media (max-width: 320px) {
+    .img-container{
+        margin-top: 14% !important;    
+    }     
+    .card-img-overlay h1{        
+        margin-top: 1%;
+    }   
+    .card-img-overlay svg{               
+        width: 18%;  
+        height: 18%;         
+    }
+    .card-img-overlay p{
+        font-size: small;    
+    } 
+    .form-cont .btn{
+        width: 35% !important;
+        height: 40px;
+    }          
+}

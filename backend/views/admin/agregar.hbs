@@ -1,0 +1,31 @@
+<div class="formulario">
+    <h2 class="mb-5 titulo-agregar">Agregar un nuevo producto</h2>
+    <form action="/admin/novedades/agregar" method="post"
+    enctype="multipart/form-data">
+      <div class="mb-3">
+        <label for="Nombre">Nombre del Producto</label>
+        <input class="form-control" type="text" id="producto" name="Nombre">
+      </div>
+      <div class="mb-3">
+        <label for="Descripcion">Descripción</label>
+        <textarea class="form-control" id="Descripcion" name="Descripcion" rows="4" cols="50"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="formFile" class="form-label">Imagen</label>
+        <input class="form-control-image rounded-1" type="file" name="imagen" id="formFile">
+      </div>
+      <label for="Precio">Precio</label>
+        <input class="form-control" type="text" name="Precio">
+      <button type="submit" class="btn btn-primary">Guardar</button>
+      <button type="button" class="btn btn-primary" onclick="cancelar()">Cancelar</button>
+    </form>     
+    {{#if error}} 
+        <p class="p-error">{{message}}</p>
+    {{/if}}  
+
+    <script>
+      function cancelar(){
+        window.location.href="/admin/novedades";}  
+    </script>     
+</div>
+    
