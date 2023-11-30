@@ -24,8 +24,10 @@
       </div>
       <label for="Precio">Precio</label>
         <input class="form-control" type="text" name="Precio" value="{{novedad.Precio}}">
-      <button type="submit" class="btn btn-primary">Guardar</button>
-      <button type="button" class="btn btn-primary" onclick="cancelar()">Cancelar</button>
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <button type="button" class="btn btn-primary" onclick="cancelar()">Cancelar</button>
+      </div>
     </form>  
     {{#if error}} 
         <p class="p-error">{{message}}</p>
